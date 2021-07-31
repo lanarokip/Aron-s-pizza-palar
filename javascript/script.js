@@ -1,43 +1,26 @@
-// // business logic
-// function pizza(type,size,crust,topping,amount){
-//     this.type = type
-//     this.size = size;
-//     this.crust = crust;
-//     this.topping = topping;
-//     this.amount = amount;
-// }
 
-// //ui logic
-// $(document).ready(function(){
-//     $("form#pizza").submit(function(event){
-//         event.preventDefault();
-         
-//         var inputtedType = $("select#pizza").val();
-//         var inputtedSize = $("select#pizzaSize").val();
-//         var inputtedCrust  = $("select#crust").val();
-//         var inputtedToping = $("div#toping").val();
-//         var inputtedAmount = $("input#number").val();
-
-//         var newPizza = new pizza(inputtedType, inputtedSize , inputtedCrust, inputtedToping, inputtedAmount );
-// alert("you")
-//         $("ul#contact").append("<li>newPizza.type</li>")
-//         $("select#pizza").val()
-//         $("select#pizzaSize").val();
-//         $("select#crust").val();
-//         $("div#toping").val();
-//         $("input#number").val();
-        
-//     });
-// });
 $(document).ready(function(){
-    $("#formPizza").submit(function(){
+    $("#formPizza").submit(function(event){
         var pType = $("#pizza").val();
         var pSize = $("#pizzaSize").val();
         var pCrusty = $("#crust").val();
         var pToping = $("#topping").val();
         var pnumber = $("#number").val();
-        var price = $("#list").append(pType)
-        var list2 =$('#list1').append(pSize)
+        function price(){
+            if(pSize == small){
+                var price1 = 650
+            }
+            else if(pSize == medium){
+                var price1 =750
+            }
+            else if (psize == large){
+                var price1 = 900
+            }
+            return price1
+        }
+        alert(price()
+        // var price = $("#list").append(pType)
+        // var list2 =$('#list1').append(pSize)
         event.preventDefault();
         
     })
