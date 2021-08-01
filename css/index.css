@@ -16,3 +16,15 @@
 .display{
     display:none;
 }
+#locationForm{
+    display: none;
+}
+#ficha{
+    display: none;
+}
+#pick{
+    display: none;
+}
+/* #ll{
+    display: none;
+} */

@@ -64,6 +64,17 @@ $(document).ready(function(){
              $("#locationForm").show(800)
              $(".speaker").hide(100)
          })
+         $("#locationForm").submit(function(event){
+            event.preventDefault()
+            var name = $("#realName").val()
+            var location = $("#locate").val()
+            $("#nName").append(name)
+            $("#ongeza").append(tTotal)
+            $("#ficha").show()
+            $("#locationForm").hide()
+            
+            // $("#finall").append(totalPrice)
+        })
     })
     
 })

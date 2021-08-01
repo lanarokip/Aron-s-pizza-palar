@@ -35,75 +35,102 @@
         </div>
         
     </div>
-
-    <form id="formPizza">
-        <div class="container">
-            <!-- sellecting pizza type -->
-            <div class="text-center text-white head jumbotron">
-                <p class="display-4">START YOUR ORDER</p>
-                <p class="display-5">what's your flavour. </p>
-                <p class="display-5">get the delivery<br> in 30 min</p>
-            </div>
-            <div class="pizzaForm">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="pizz">pizza types</label>                        
-                        <select id="pizza" name="pizza" class="form-control">
-                            <option value="MeatPizza">Meat Pizza</option>;
-                            <option value="PepperoniPizza">Pepperoni Pizza</option>;
-                            <option value="HawaiianPizza">Hawaiian Pizza</option>;
-                            <option value="BuffaloPizza">Buffalo Pizza</option>
-                            <option vlaue="MargheritaPizza">Margherita Pizza</option>
-                        </select>
-
-                        <!-- selecting the pizza size -->
-                        <p>whats pizza size</p>
-                        <label for="pizzaSize">pizza size</label>
-                        <select id="pizzaSize" name="pizzaSiz" class="form-control">
-                            <option value="small">small --@650ksh</option>
-                            <option value="medium">medium --@750ksh</option>
-                            <option value="large">large --@900 ksh</option>
-                        </select>
-
-                        <!-- choose the the crust -->
-                        <p>crusty</p>
-                        <label for="crusty">how crusty do you want it</label>
-                        <select id="crust" name="crust" class="form-control">
-                            <option value="thinCrust">Thin Crust</option>
-                            <option value="FlatbreadCrust">Flatbread Crust</option>
-                            <option value="ThickCrust">Thick Crust</option>
-                        </select>
-
-                        <!-- toppings -->
-                        <p>select the toping you ineed of</p>
-                        <label>topping</label>
-                        <select id="topping" class="form-control" >
-                            <option value="tomato">tomato--@80ksh</option>
-                            <option value="GreenPepper">green pepper --@80ksh</option>
-                            <option value="mince">mince --@120ksh</option>
-                        </select>
-                        <label for="numberOfPizza">number of Pizza</label><br>
-                        <input id="number" type="number" min="1" placeholder="numberOfPizza" required><br>
-
-                        <!-- submit -->
-                        <input class="btn btn-primary text-cent" type="submit" value="place order">
-
-
-                      
+    <div id="formPizza">
+        <div class="row">
+            <div class="col-sm-4">
+                <form id="formPizza">
+                    <div class="container">
+                        <!-- sellecting pizza type -->
+                        <div class="text-center text-white head jumbotron">
+                            <p class="display-4">START YOUR ORDER</p>
+                            <p class="display-5">what's your flavour. </p>
+                            <p class="display-5">get the delivery<br> in 30 min</p>
+                        </div>
+                        <div class="pizzaForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="pizz">pizza types</label>                        
+                                    <select id="pizza" name="pizza" class="form-control">
+                                        <option value="MeatPizza">Meat Pizza</option>;
+                                        <option value="PepperoniPizza">Pepperoni Pizza</option>;
+                                        <option value="HawaiianPizza">Hawaiian Pizza</option>;
+                                        <option value="BuffaloPizza">Buffalo Pizza</option>
+                                        <option vlaue="MargheritaPizza">Margherita Pizza</option>
+                                    </select>
+            
+                                    <!-- selecting the pizza size -->
+                                    <p>whats pizza size</p>
+                                    <label for="pizzaSize">pizza size</label>
+                                    <select id="pizzaSize" name="pizzaSiz" class="form-control">
+                                        <option value="small">small --@650ksh</option>
+                                        <option value="medium">medium --@750ksh</option>
+                                        <option value="large">large --@900 ksh</option>
+                                    </select>
+            
+                                    <!-- choose the the crust -->
+                                    <p>crusty</p>
+                                    <label for="crusty">how crusty do you want it</label>
+                                    <select id="crust" name="crust" class="form-control">
+                                        <option value="thinCrust">Thin Crust</option>
+                                        <option value="FlatbreadCrust">Flatbread Crust</option>
+                                        <option value="ThickCrust">Thick Crust</option>
+                                    </select>
+            
+                                    <!-- toppings -->
+                                    <p>select the toping you ineed of</p>
+                                    <label>topping</label>
+                                    <select id="topping" class="form-control" >
+                                        <option value="tomato">tomato--@80ksh</option>
+                                        <option value="GreenPepper">green pepper --@80ksh</option>
+                                        <option value="mince">mince --@120ksh</option>
+                                    </select>
+                                    <label for="numberOfPizza">number of Pizza</label><br>
+                                    <input id="number" type="number" min="1" placeholder="numberOfPizza" required><br>
+            
+                                    <!-- submit -->
+                                    <input class="btn btn-primary text-cent" type="submit" value="place order">
+            
+            
+                                  
+                                </div>
+                                    <div class="col-md-4" id="ll">
+                                        <div class="display text text-white">
+                                            <p>your order has been received.total number is<span id="pizNumber"></span></p>
+                                            <p>Total amount is <span id="realPrice"></span></p>
+                                            <input id="btnDeliver" type="button" value="delivery"></br>
+                                            <input type="button" value="Pick" id="else">
+                                        </div>
+                                    
+                                        <div id="locationForm">
+                                            <input class="form-control" id="realName" type="text" placeholder="Name">
+                                            <input class="form-control" id="phoneNumber" type="number" placeholder="Enter your contact">
+                                            <input class="form-control" id="locate" type="text" placeholder="Location">
+                                            <input type="submit" value="Place order" id="orderPlace"> 
+                                        </div>
+                                        
+                                        <div id="ficha">
+                                            <p class="text-white"><span id="nName"></span>Your order has been received.<span id="ongeza"></span></p>
+                                        </div>
+                                        <div>
+                                            <p class="text-white" id="pick">Welcome to pick your pizza at our premises anytime..</p>
+                                        </div>
+                                    
+                                    </div>
+                            </div>
+                        </div>
+            
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
-    </form>
-
-    <div class="display text text-white">
-        <p>your order has been received.total number is<span id="pizNumber"></span></p>
-        <p>Total amount is <span id="realPrice"></span></p>
-        <input id="btnDeliver" type="button" value="delivery"></br>
-        <input type="button" value="Pick" id="else">
     </div>
-<table class="table table-striped mt-5 text-white">
+
+    
+
+    
+
+<!-- <table class="table table-striped mt-5 text-white">
     <thead>
         <tr>
             <th> pizza type </th>
@@ -115,7 +142,7 @@
     </thead>
     <tbody id="list"></tbody>
 
-</table>
+</table> -->
      
  </ul>
 </body>
