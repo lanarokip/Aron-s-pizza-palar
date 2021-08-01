@@ -56,22 +56,22 @@ $(document).ready(function(){
         Delivery = 250;
         totalPrice = (tPrice + cPrice + price) * pizzaNumber
         tTotal =( (tPrice + cPrice + price) * pizzaNumber)+Delivery
-        
+
         $(".display").show(500)
-         $("#realPrice").append(totalPrice)
-         $("#pizNumber").append(pizzaNumber)
+         $("#realPrice").html(totalPrice)
+         $("#pizNumber").html(pizzaNumber)
          $("#btnDeliver").click(function(){
              $("#locationForm").show(800)
-             $(".speaker").hide(100)
+             $(".display").hide(100)
          })
-         $("#locationForm").submit(function(event){
+         $("#orderPlace").click(function(event){
             event.preventDefault()
             var name = $("#realName").val()
             var location = $("#locate").val()
-            $("#nName").append(name)
-            $("#ongeza").append(tTotal)
-            $("#ficha").show()
-            $("#locationForm").hide()
+            $("#ficha").show();
+            $("#nName").html(name)
+            $("#ongeza").html(tTotal)
+            // $(".display").hide()
             
             // $("#finall").append(totalPrice)
         })
