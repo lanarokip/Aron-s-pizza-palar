@@ -56,7 +56,14 @@ $(document).ready(function(){
         Delivery = 250;
         totalPrice = (tPrice + cPrice + price) * pizzaNumber
         tTotal =( (tPrice + cPrice + price) * pizzaNumber)+Delivery
-        alert(tTotal)
+        
+        $(".display").show(500)
+         $("#realPrice").append(totalPrice)
+         $("#pizNumber").append(pizzaNumber)
+         $("#btnDeliver").click(function(){
+             $("#locationForm").show(800)
+             $(".speaker").hide(100)
+         })
     })
     
 })
