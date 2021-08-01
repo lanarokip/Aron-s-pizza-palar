@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">   
     <script src="./javascript/script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <nav class="navbar  navbar-expand-sm navbar-dark fixed-top bg-danger ">
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="nav navbar-nav mr-auto ">
             <li class="nav-item">
@@ -33,20 +36,20 @@
         </div>
     </nav>
 
-    <div class="text-center">
-        <p class=" text-white display-3"><span class="bnt-success">PIZZA</span> !!!!</p>
-        <p class="display-5 text-white">Get your pizza in an instant</p>
-        <p><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 48px;"></i></p>
+    <div class="text-center jumbotron ">
+        <p id="firstPiz" class=" text-white display-3"><span class="text-warning">PIZZA</span> !!!!</p>
+        <p class="display-5 pt-5 text-white">Get your pizza in an instant</p>
+        <p class="text-white pT"><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 48px;"></i></p>
     </div>
 
 
-    <div class="row text-white">
+    <div class="justify-content-center typePizza row text-white">
         <div class="col-md-3">
-            <img class="img-fluid" src="./assets/abdulaziz-alabdullah-BXhcvsiOEx8-unsplash.jpg" alt="MeatPizza" >
+            <img class="img-fluid" src="./assets/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="MeatPizza" >
             <p>Meat Pizza</p>
         </div>
         <div class="col-md-3">
-             <img class="img-fluid" src="./assets/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Pepperoni" srcset="">
+             <img class="img-fluid" src="./assets/alexandra-gorn-52jG7-FN22Y-unsplash.jpg" alt="Pepperoni" srcset="">
              <p>Pepperoni pizza</p>
         </div>
         <div class="col-md-3">
@@ -59,10 +62,10 @@
         <div class="row justify-content-center">
             <div class="col-sm-4">
                 <form id="formPizza">
-                    <div class="container">
+                    <div class="container-md">
                         <!-- sellecting pizza type -->
                         <div class="text-center text-white head jumbotron">
-                            <p class="display-4">START YOUR ORDER</p>
+                            <p class="display-4"><b>START YOUR ORDER</b></p>
                             <p class="display-5">what's your flavour. </p>
                             <p class="display-5">get the delivery<br> in 30 min</p>
                         </div>
@@ -161,7 +164,7 @@
             <p>pgone::0705378641</p>
         </div>
         <div class="col -md-3">
-            <i class="fab fa-twitter-square"></i>
+            
         </div>
         
     </div>
