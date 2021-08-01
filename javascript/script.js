@@ -81,6 +81,9 @@ $(document).ready(function(){
             $("#ficha").show();
             $("#nName").html(name)
             $("#ongeza").html(tTotal)
+            $("#priceDelivery").html(tTotal)
+            $(".col-1").hide(500)
+            $("#locationForm").hide(500)
             }
 
             // $(".display").hide()
@@ -90,6 +93,8 @@ $(document).ready(function(){
             $("#else").click(function(){
                 $("#pick").show()
                 $(".text").hide()
+                $("#priceDelivery").html(totalPrice)
+                $(".col-1").hide(500)
             })
     })
     
