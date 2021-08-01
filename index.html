@@ -13,6 +13,26 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav mr-auto ">
+            <li class="nav-item">
+               <a class="nav-link active" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">contacts</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
     <div class="text-center">
         <p class=" text-white display-3"><span class="bnt-success">PIZZA</span> !!!!</p>
         <p class="display-5 text-white">Get your pizza in an instant</p>
@@ -59,8 +79,8 @@
                                     </select>
             
                                     <!-- selecting the pizza size -->
-                                    <p>whats pizza size</p>
-                                    <label for="pizzaSize">pizza size</label>
+                                    <!-- <p>whats pizza size</p> -->
+                                    <label for="pizzaSize">sellect the size</label>
                                     <select id="pizzaSize" name="pizzaSiz" class="form-control">
                                         <option value="small">small --@650ksh</option>
                                         <option value="medium">medium --@750ksh</option>
@@ -68,8 +88,8 @@
                                     </select>
             
                                     <!-- choose the the crust -->
-                                    <p>crusty</p>
-                                    <label for="crusty">how crusty do you want it</label>
+                                    <!-- <p>crusty</p> -->
+                                    <label for="crusty">crust</label>
                                     <select id="crust" name="crust" class="form-control">
                                         <option value="thinCrust">Thin Crust</option>
                                         <option value="FlatbreadCrust">Flatbread Crust</option>
@@ -77,15 +97,15 @@
                                     </select>
             
                                     <!-- toppings -->
-                                    <p>select the toping you ineed of</p>
-                                    <label>topping</label>
+                                    <!-- <p>select the toping you ineed of</p> -->
+                                    <label>lets make it more yummy!!select topping</label>
                                     <select id="topping" class="form-control" >
                                         <option value="tomato">tomato--@80ksh</option>
                                         <option value="GreenPepper">green pepper --@80ksh</option>
                                         <option value="mince">mince --@120ksh</option>
                                     </select>
                                     <label for="numberOfPizza">number of Pizza</label><br>
-                                    <input id="number" type="number" min="1" placeholder="numberOfPizza"><br>
+                                    <input id="number" type="number" min="1" placeholder="numberOfPizza" required><br>
             
                                     <!-- submit -->
                                     <input class="btn btn-primary text-cent" type="submit" value="place order">
@@ -95,8 +115,9 @@
                                 </div>
                                     <div class="col-md-4" >
                                         <div class="display text text-white">
-                                            <p>your order has been received.total number is<span id="pizNumber"></span></p>
+                                            <p>your order has been received.total number of pizza is <span id="pizNumber"></span></p>
                                             <p>Total amount is <span id="realPrice"></span></p>
+                                            <p><span style="color: red;" class="display4 ">NOTE</span> the delivery fee is 250ksh</p>
                                             <input id="btnDeliver" type="button" value="delivery"></br>
                                             <input type="button" value="Pick" id="else">
                                         </div>
@@ -125,8 +146,26 @@
 
         </div>
     </div>
-
     
+
+    <div class="row foota text-white">
+        <div class="col-md-3">
+            <b>location</b>
+            <p>pizza palour</p>
+            <p>Kericho </p>
+            <p> 4544, Kericho</p>
+        </div>
+        <div class="col-md-3">
+            <b>Customer Care</b>
+            <p>lankipkoecharo@gmail.com</p>
+            <p>pgone::0705378641</p>
+        </div>
+        <div class="col -md-3">
+            <i class="fab fa-twitter-square"></i>
+        </div>
+        
+    </div>
+   
 
     
 
@@ -137,13 +176,13 @@
             <th> size </th>
             <th> crusty </th>
             <th> number </th>
-            <th> total price </th>
+            <th>  </th>
         </tr>
     </thead>
     <tbody id="list"></tbody>
 
-</table> -->
-     
- </ul>
+</table>
+      -->
+ <!-- </ul> -->
 </body>
 </html>
