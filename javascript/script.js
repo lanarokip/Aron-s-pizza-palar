@@ -1,3 +1,6 @@
+
+
+
 var price, cPrice, tPrice, totalPrice, Delivery, tTotal;
 function mainPizza(size, topping, crust, number){
     this.size = size;
@@ -63,18 +66,31 @@ $(document).ready(function(){
          $("#btnDeliver").click(function(){
              $("#locationForm").show(800)
              $(".display").hide(100)
+             
+                 $("list").append(`<td>${pizzaSize.size}</td>`)
+             
          })
          $("#orderPlace").click(function(event){
             event.preventDefault()
             var name = $("#realName").val()
             var location = $("#locate").val()
+            if(name==""){
+                alert("please inpute name")
+            }
+            else{
             $("#ficha").show();
             $("#nName").html(name)
             $("#ongeza").html(tTotal)
+            }
+
             // $(".display").hide()
             
             // $("#finall").append(totalPrice)
-        })
+           })
+            $("#else").click(function(){
+                $("#pick").show()
+                $(".text").hide()
+            })
     })
     
 })
