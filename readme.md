@@ -5,7 +5,7 @@
 This a website that showcases the pizza available in pizza palour(an online selling platform).
 ## fork/ clone the repository
 ```
-    git clone..................
+    git clone https://github.com/lanarokip/Aron-s-pizza-palar.git
 ```
 ### How to get it to your local computer
 * Ensure you are in your prefered folder, where you want it to be set up.
