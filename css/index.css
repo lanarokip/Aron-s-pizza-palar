@@ -1,17 +1,37 @@
+ *{
+     padding:0;
+     margin:0;
+     box-sizing:border-box;
+     font-family: 'Georama', sans-serif;
+    
+ }
+ .jumbotron{
+     height: 60vh;
+     background-color: rgba(0, 0, 0, 0.322);
+ }
+ .typePizza{
+     font-size: 20x;
+ }
  body{
+     padding-top: 50px;
      background-image: url(../assets/ivan-torres-MQUqbmszGGM-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
+    font-size: large;
+ }
+ .pT, {
+     padding-top: 200px;
  }
  .head{
-    background-image: url(../assets/shourav-sheikh-Q9VEWorDhaY-unsplash.jpg);
+    background-image: url(../assets/miha-rekar-kWEkH7j3KNI-unsplash.jpg);
     background-size: 105px;
     background-size: cover;
 }
 .pizzaForm{
     padding: 0;
     margin: 0;
-    background:linear-gradient(to left, rgba(129, 62, 35, 0.541),#00FF6C)
+    background:linear-gradient(to left, rgba(129, 62, 35, 0.541),#00FF6C);
+    font-size: 20px;
 } 
 .display{
     display:none;
@@ -28,3 +48,6 @@
 /* #ll{
     display: none;
 } */
+.finalShow{
+    background-color: #2244305e;
+}
