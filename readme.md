@@ -11,7 +11,7 @@ This a website that showcases the pizza available in pizza palour(an online sell
 * Ensure you are in your prefered folder, where you want it to be set up.
 * run this comand in your terminal git clone
 ### live site 
-view [live]()
+view [live](https://lanarokip.github.io/Aron-s-pizza-palar/)
 ## Known Bugs
 no bugs as of deployment
 ## Technologies Used
