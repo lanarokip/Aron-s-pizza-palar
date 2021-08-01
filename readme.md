@@ -31,3 +31,8 @@ Copyright (c) {2021}
 Moringa SchoolMoringa School
 Moringa School | Tech Skills Training for Career Readiness
 Our intensive curriculum empowers learners with the technical and soft skills needed to thrive in an ever-evolving industry to find long-term success in employment, entrepreneurship or further education. (71 kB)
+
+### screenshot
+<img src="./assets/s1.png">
+<img src="./assets/s2.png">
+<img src="./assets/s3.png">
