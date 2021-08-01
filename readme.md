@@ -5,7 +5,7 @@
 This a website that showcases the pizza available in pizza palour(an online selling platform).
 ## Setup/Installation Requirements
 * one should have the following files
-* <img src="./assets/requirements.png"
+*  <img src="./assets/requirements.png" alt="" >
 ### How to get it to your local computer
 * Ensure you are in your prefered folder, where you want it to be set up.
 * run this comand in your terminal git clone
